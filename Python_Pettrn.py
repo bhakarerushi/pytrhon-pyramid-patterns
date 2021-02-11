@@ -1,24 +1,25 @@
 
-# inverted half pyramid of numbers starting with 0.
+# inverted half pyramid of numbers digit upto 10.
 
 n = int(input("enter no:"))
 
-for i in range(n,0,-1):
+start = 1
+stop = 2
+current_num = stop
 
-    for j in range(i+1):
+for row in range(2,6):
 
-        print(j,end = ' ')
+    for col in range(start,stop):
 
-    print(" ")
+        current_num -= 1
 
+        print(current_num,end=' ')
 
-'''
+    print(' ')
 
-enter no:5
-0 1 2 3 4 5
-0 1 2 3 4
-0 1 2 3
-0 1 2
-0 1
+    start = stop
 
-'''
+    stop += row
+
+    current_num = stop
+
