@@ -1,34 +1,35 @@
 
-# Mirrored Pyramid (Right-angled Triangle) Pattern of Numbers
+# Equilateral triangle with star (*) symbol.
 
 n = int(input("enter no:"))
 
+m = (2 * n) - 2
 for i in range(1,n+1):
-    num = 1
-    for j in range(n,0,-1):
 
-        if j > i:
-            print(" ",end=' ')
-        else:
-            print(num, end = ' ')
+    for j in range(0,m):
 
-            num += 1
+        print(end = ' ')
     
+    m = m-1
+
+
+    for j in range(1,i+1):
+        print('*', end=' ')
+
     print(' ')
 
 
 
 '''
 
-
 output : 
-
 enter no:5
-        1
-      1 2
-    1 2 3
-  1 2 3 4
-1 2 3 4 5
+        *
+       * *
+      * * *
+     * * * *
+    * * * * *
+
 
 
 '''
