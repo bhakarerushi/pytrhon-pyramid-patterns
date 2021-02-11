@@ -1,24 +1,23 @@
 
-# half pyramid patern with mix numbers.
+# half pyramid pattern of descending numbers.
 
-n  = int(input("enter no:"))
 
-for i in range(1,n+1):
+n = int(input("enter no:"))
 
-    for j in range(1,i+1):
+for i in range(n,0,-1):
 
-        print(j,end = " ")
-    print('')
+    for j in range(i):
+
+        print(i,end = " ")
+    print(" ")
+
 
 '''
-
-output:
-
 enter no:5
+5 5 5 5 5
+4 4 4 4
+3 3 3
+2 2
 1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
 
 '''
