@@ -1,27 +1,23 @@
 
-# half inverted pyramid of same digit.
-
+# reverse pyramid of numbers.
 
 n = int(input("enter no:"))
 
 
-for i in range(n,0,-1):
+for i in range(1,n+1):
 
-    for j in range(i):
-
-        print(n,end = ' ')
+    for j in range(i,0,-1):
+        print(j,end = " ")
 
     print(" ")
-
-
 
 '''
 
 enter no:5
-5 5 5 5 5
-5 5 5 5
-5 5 5
-5 5
-5
+1
+2 1
+3 2 1
+4 3 2 1
+5 4 3 2 1
 
 '''
