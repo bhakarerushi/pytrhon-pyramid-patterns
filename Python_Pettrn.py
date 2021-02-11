@@ -1,25 +1,29 @@
 
-# inverted half pyramid of numbers digit upto 10.
+# unique pyramid patterns of digits.
 
 n = int(input("enter no:"))
 
-start = 1
-stop = 2
-current_num = stop
 
-for row in range(2,6):
+for i in range(1,n+1):
 
-    for col in range(start,stop):
+    for j in range(1,i):
 
-        current_num -= 1
+        print(j, end = ' ')
+    
+    for j in range(i,0,-1):
 
-        print(current_num,end=' ')
+        print(j, end = ' ' )
 
     print(' ')
 
-    start = stop
 
-    stop += row
+'''
 
-    current_num = stop
+enter no:5
+1
+1 2 1
+1 2 3 2 1
+1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1
 
+'''
