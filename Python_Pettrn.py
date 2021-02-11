@@ -1,30 +1,31 @@
 
-# Connected Inverted pyramid pattern of Numbers .
+# Even number pyramid pattern.
 
 n = int(input("enter no:"))
 
-for i in range(0,n+1):
+lastevennum = 2 * n
 
-    for j in range(n,i,-1):
-        print(j,end = ' ')
+evennum = lastevennum
 
-    for I in range(i):
-        print('', end = '')
-    
-    for k in range(i+1,n+1):
-        print(k,end= ' ')
-    
+for i in range(1,n+1):
+
+    evennum = lastevennum
+
+    for j in range(i):
+
+        print(evennum,end = ' ')
+
+        evennum -= 2
 
     print(' ')
 
-
 '''
+output : 
 
 enter no:5
-5 4 3 2 1 1 2 3 4 5
-5 4 3 2 2 3 4 5
-5 4 3 3 4 5
-5 4 4 5
-5 5
+10
+10 8
+10 8 6
+10 8 6 4
 
 '''
